@@ -1,13 +1,13 @@
 import Race from './Race';
 
-class Haling extends Race {
+class Halfling extends Race {
   private _maxLifePoints: number;
-  private halingInstances = 0;
+  private halflingInstances = 0;
 
   constructor(name:string, dexterity:number) {
     super(name, dexterity);
     this._maxLifePoints = 60;
-    this.halingInstances += 1;
+    this.halflingInstances += 1;
   }
 
   override get maxLifePoints(): number {
@@ -15,8 +15,8 @@ class Haling extends Race {
   }
 
   public createdRacesInstances(): number {
-    return this.halingInstances;
+    return this.halflingInstances;
   }
 }
 
-export default Haling;
+export default Halfling;
