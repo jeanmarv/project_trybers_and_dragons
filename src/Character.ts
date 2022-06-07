@@ -78,9 +78,11 @@ class Character implements Fighter {
   }
 
   public special(enemy: Fighter): void {
+    console.log('ASURA STRIKE');
     enemy.receiveDamage(
       this.energy.amount * (this._strength / 2) + (this._dexterity / 2),
     );
+    this.energy.amount = 0;
   }
 
   public levelUp(): void {
