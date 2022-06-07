@@ -1,5 +1,5 @@
-import Battle from './Battle/Battle';
-import Fighter from './Fighter/Fighter';
+import Battle from './Battle';
+import Fighter from '../Fighter/Fighter';
 
 class PVP extends Battle {
   _player1: Fighter;
